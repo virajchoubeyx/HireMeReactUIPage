@@ -32,24 +32,30 @@ const Main = () => {
       <Typography sx={{ margin: "5%" }} variant="h3" align="center">
         Get Hired or Hire People for Free!
       </Typography>
+      <>Note: Clicking on these buttons will take you to the swagger-api page. This project is mainly focused on it's backend part.</>
+      <br/>
+      <>Instructions: Once you are on Swagger UI Page, follow these steps.</>
+      <br/>
+      <>Chose a service, then click on "try it out", then "execute" to perform action.</>
       <div>
         <ul className="ul">
           <li>
             <Button sx={{ margin: "2% 3%" }} variant="outlined">
-              <Link to="/employer/dashboard">
+              <Link to="https://hireme-weql.onrender.com/swagger-ui/index.html#/post-controller/addPost">
                 Hire Talent
               </Link>
             </Button>
           </li>
           <li>
             <Button sx={{ margin: "2% 3%" }} variant="outlined">
-              <Link to="/employee/feed">
+              <Link to="https://hireme-weql.onrender.com/swagger-ui/index.html#/post-controller/getAllPosts">
                 Get Job Now
               </Link>
             </Button>
           </li>
         </ul>
       </div>
+      <>Will update the frontend of the application soon.</>
     </Container>
   );
 };
